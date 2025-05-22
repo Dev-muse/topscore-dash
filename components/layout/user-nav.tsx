@@ -14,9 +14,9 @@ import { Button } from "@/components/ui/button";
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Settings, LogOut } from "lucide-react";
-import {user} from  "@/util/constants"
-
+ const user = { name: "Rahman Muse", email: "a.muse@example.com", initials: "AM" };
 export default function UserNav() {
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
