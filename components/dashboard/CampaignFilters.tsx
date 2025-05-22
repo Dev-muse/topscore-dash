@@ -119,7 +119,7 @@ const CampaignFilters: React.FC<CampaignFiltersProps> = ({
           <label htmlFor="search-dashboard" className="block text-sm font-medium text-muted-foreground mb-1 sr-only">Search</label>
           <Input id="search-dashboard" placeholder="Search" className="bg-card border-input h-10 pl-4 pr-10" />
           <Button variant="ghost" size="icon" className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8">
-            <Search className="h-5 w-5 text-white" />
+            <Search className="h-5 w-5" />
           </Button>
         </div>
       </div>
