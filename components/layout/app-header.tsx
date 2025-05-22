@@ -1,4 +1,3 @@
-// @ts-nocheck
 "use client";
 
 import UserNav from "@/components/layout/user-nav";

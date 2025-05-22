@@ -9,7 +9,6 @@ import {
   Sidebar, 
   SidebarHeader, 
   SidebarContent, 
-  SidebarFooter, 
   SidebarInset,
   SidebarRail
 } from "@/components/ui/sidebar";
