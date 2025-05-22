@@ -28,7 +28,7 @@ export default function CampaignDashboardCard({
   const [selectedCampaign, setSelectedCampaign] = React.useState("bp-test-campaign");
   const [startDate, setStartDate] = React.useState<Date | undefined>(new Date(2024, 0, 1));
   const [endDate, setEndDate] = React.useState<Date | undefined>(new Date(2024, 11, 31));
-  const [showFilters, setShowFilters] = React.useState(false);
+  const [showFilters, setShowFilters] = React.useState(true);
 
   return (
     <Card className="shadow-lg rounded-lg border-border bg-card">
