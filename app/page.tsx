@@ -6,11 +6,12 @@ import React from 'react';
 // Components
 import CampaignDashboardCard from '@/components/dashboard/CampaignDashboardCard';
 import AssessorAveragesCard from '@/components/dashboard/AssessorAveragesCard';
+import ExerciseAveragesCard from '@/components/dashboard/ExerciseAveragesCard';
 import Footer from '@/components/footer';
 
 
 // Data
-import { assessorAveragesData, campaignStats, groupPresentationColumns, presentationColumns } from "@/util/constants";
+import { assessorAveragesData, campaignStats, exerciseAveragesData, groupPresentationColumns, presentationColumns } from "@/util/constants";
 
 // Helpers
 import { formatScore, getNestedValue, getScoreDisplayClasses } from '@/util/dashboardHelpers';
@@ -23,7 +24,8 @@ export default function TopScoreDashboardPage() {
       {/* main campaign dashboard card */}
       <CampaignDashboardCard campaignStats={campaignStats} />
 
-
+      
+      <ExerciseAveragesCard exerciseAveragesData={exerciseAveragesData} />
 
     {/* Assessor averages */}
       <AssessorAveragesCard

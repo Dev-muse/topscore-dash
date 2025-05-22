@@ -42,3 +42,22 @@ export interface AssessorAveragesProps {
   formatScore: (score: number | undefined | null) => string;
   getNestedValue: (obj: any, path: string) => any;
 }
+
+
+export interface ExerciseAveragesCardProps {
+  exerciseAveragesData: {
+    name: string;
+    score: string;
+    maxScore: string;
+  }[];
+}
+
+export interface Exercise {
+  name: string;
+  score: string;
+  maxScore: string;
+}
+
+export interface ExerciseAveragesTableProps {
+  exerciseAveragesData: Exercise[];
+}

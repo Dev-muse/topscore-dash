@@ -113,12 +113,13 @@ const CampaignFilters: React.FC<CampaignFiltersProps> = ({
         <label htmlFor="end-date" className="block text-sm font-medium text-muted-foreground mb-1">End date</label>
         <DatePickerComponent date={endDate} setDate={setEndDate} placeholderText="Select end date"/>
       </div>
+      {/* search */}
       <div className="flex items-end gap-2">
         <div className="flex-grow relative">
           <label htmlFor="search-dashboard" className="block text-sm font-medium text-muted-foreground mb-1 sr-only">Search</label>
           <Input id="search-dashboard" placeholder="Search" className="bg-card border-input h-10 pl-4 pr-10" />
           <Button variant="ghost" size="icon" className="absolute right-1 top-1/2 -translate-y-1/2 h-8 w-8">
-            <Search className="h-5 w-5 text-muted-foreground" />
+            <Search className="h-5 w-5 text-white" />
           </Button>
         </div>
       </div>

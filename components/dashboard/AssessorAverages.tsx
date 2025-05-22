@@ -86,7 +86,7 @@ const AssessorAverages: React.FC<AssessorAveragesProps> = ({
 
   return (
     <Tabs defaultValue="presentation" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 md:w-auto md:inline-flex mb-0 bg-transparent p-0 border-b rounded-none">
+      <TabsList className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:w-auto md:inline-flex mb-12 bg-transparent p-0 border-b rounded-none">
         <TabsTrigger value="presentation" className="text-sm data-[state=active]:border-b-2 data-[state=active]:border-primary data-[state=active]:text-primary data-[state=active]:shadow-none rounded-none data-[state=active]:bg-transparent text-muted-foreground pb-2">
           Presentation
         </TabsTrigger>
