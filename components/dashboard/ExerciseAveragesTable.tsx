@@ -1,13 +1,12 @@
-// @ts-nocheck
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ExerciseAveragesTableProps, Exercise } from "@/lib/types";
 
-const ExerciseAveragesTable: React.FC<ExerciseAveragesTableProps> = ({
+function ExerciseAveragesTable({
   exerciseAveragesData,
-}) => {
+}: ExerciseAveragesTableProps) {
   return (
     <Card className="shadow-lg rounded-lg border-border bg-card">
       <CardHeader>

@@ -14,6 +14,19 @@ export interface CampaignDashboardCardProps {
   campaignStats: { title: string; value: string; Icon: LucideIcon; iconBg: string; iconColor: string; }[];
 }
 
+interface CampaignStat {
+  title: string;
+  value: string;
+  Icon: LucideIcon;
+  iconBg: string;
+  iconColor: string;
+}
+
+export interface CampaignStatsProps {
+  campaignStats: CampaignStat[];
+}
+
+
 export interface CampaignFiltersProps {
   selectedCampaign: string;
   setSelectedCampaign: (campaign: string) => void;

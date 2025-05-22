@@ -74,7 +74,7 @@ function DatePickerComponent({ date, setDate, placeholderText = "Pick a date" }:
 
 
 
-const CampaignFilters: React.FC<CampaignFiltersProps> = ({
+function CampaignFilters({
   selectedCampaign,
   setSelectedCampaign,
   startDate,
@@ -82,7 +82,7 @@ const CampaignFilters: React.FC<CampaignFiltersProps> = ({
   endDate,
   setEndDate,
   showFilters,
-}) => {
+}: CampaignFiltersProps) {
   if (!showFilters) {
     return null;
   }

@@ -19,7 +19,7 @@ import { cn } from '@/lib/utils';
 import { AssessorAveragesProps } from '@/lib/types';
 
 
-const AssessorAverages: React.FC<AssessorAveragesProps> = ({
+function AssessorAverages({
   assessorAveragesData,
   presentationColumns,
   groupPresentationColumns,
@@ -30,7 +30,7 @@ const AssessorAverages: React.FC<AssessorAveragesProps> = ({
   getScoreDisplayClasses,
   formatScore,
   getNestedValue,
-}) => {
+}: AssessorAveragesProps) {
 
   const sortedPresentationData = React.useMemo(() => {
     let sortableItems = [...assessorAveragesData];

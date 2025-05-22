@@ -1,21 +1,11 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import type { LucideIcon } from "lucide-react";
+import { CampaignStatsProps } from '@/lib/types';
 
-interface CampaignStat {
-  title: string;
-  value: string;
-  Icon: LucideIcon;
-  iconBg: string;
-  iconColor: string;
-}
 
-interface CampaignStatsProps {
-  campaignStats: CampaignStat[];
-}
 
-const CampaignStats: React.FC<CampaignStatsProps> = ({ campaignStats }) => {
+function CampaignStats({ campaignStats }:CampaignStatsProps){
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mt-2">
       {campaignStats.map((stat) => (

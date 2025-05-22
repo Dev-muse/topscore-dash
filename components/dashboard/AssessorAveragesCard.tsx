@@ -14,14 +14,14 @@ import { AssessorAveragesCardProps } from '@/lib/types';
  
 
 
-const AssessorAveragesCard: React.FC<AssessorAveragesCardProps> = ({
+function AssessorAveragesCard ({
   assessorAveragesData,
   presentationColumns,
   groupPresentationColumns,
   getScoreDisplayClasses,
   formatScore,
   getNestedValue,
-}) => {
+}: AssessorAveragesCardProps) {
   const [presentationSortConfig, setPresentationSortConfig] = React.useState<{ key: string; direction: 'ascending' | 'descending' } | null>(null);
   const [groupPresentationSortConfig, setGroupPresentationSortConfig] = React.useState<{ key: string; direction: 'ascending' | 'descending' } | null>(null);
 
