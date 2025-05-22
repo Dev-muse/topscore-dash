@@ -20,12 +20,9 @@ import { Calendar } from "@/components/ui/calendar";
 import { CalendarDays, Search } from "lucide-react"; // FilterIcon and HelpCircle are in the parent
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import { CampaignFiltersProps, DatePickerProps } from '@/lib/types';
 
-interface DatePickerProps {
-  date: Date | undefined;
-  setDate: (date: Date | undefined) => void;
-  placeholderText?: string;
-}
+
 
 function DatePickerComponent({ date, setDate, placeholderText = "Pick a date" }: DatePickerProps) {
   const [isClient, setIsClient] = React.useState(false);
@@ -75,15 +72,7 @@ function DatePickerComponent({ date, setDate, placeholderText = "Pick a date" }:
 }
 
 
-interface CampaignFiltersProps {
-  selectedCampaign: string;
-  setSelectedCampaign: (campaign: string) => void;
-  startDate: Date | undefined;
-  setStartDate: (date: Date | undefined) => void;
-  endDate: Date | undefined;
-  setEndDate: (date: Date | undefined) => void;
-  showFilters: boolean;
-}
+
 
 const CampaignFilters: React.FC<CampaignFiltersProps> = ({
   selectedCampaign,

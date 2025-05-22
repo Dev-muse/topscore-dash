@@ -18,11 +18,9 @@ import {
 import CampaignFilters from "./CampaignFilters";
 import CampaignStats from "./CampaignStats";
 
-import type { LucideIcon } from "lucide-react";
+ import { CampaignDashboardCardProps } from '@/lib/types';
 
-interface CampaignDashboardCardProps {
-  campaignStats: { title: string; value: string; Icon: LucideIcon; iconBg: string; iconColor: string; }[];
-}
+
 
 export default function CampaignDashboardCard({
   campaignStats,

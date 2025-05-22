@@ -4,26 +4,39 @@
 import React from 'react';
 
 // Components
-  
+import CampaignDashboardCard from '@/components/dashboard/CampaignDashboardCard';
+import AssessorAveragesCard from '@/components/dashboard/AssessorAveragesCard';
+import Footer from '@/components/footer';
+
 
 // Data
-import { campaignStats } from "@/util/constants";
-import CampaignDashboardCard from '@/components/dashboard/CampaignDashboardCard';
- 
+import { assessorAveragesData, campaignStats, groupPresentationColumns, presentationColumns } from "@/util/constants";
 
+// Helpers
+import { formatScore, getNestedValue, getScoreDisplayClasses } from '@/util/dashboardHelpers';
 
 export default function TopScoreDashboardPage() {
- 
+
   return (
     <div className="space-y-8 p-4 md:p-6 lg:p-8 text-foreground">
+
+      {/* main campaign dashboard card */}
       <CampaignDashboardCard campaignStats={campaignStats} />
 
-      
+
+
+    {/* Assessor averages */}
+      <AssessorAveragesCard
+        assessorAveragesData={assessorAveragesData}
+        presentationColumns={presentationColumns}
+        groupPresentationColumns={groupPresentationColumns}
+        getScoreDisplayClasses={getScoreDisplayClasses}
+        formatScore={formatScore}
+        getNestedValue={getNestedValue}
+      />
 
       {/* Footer */}
-      <footer className="text-center text-xs text-muted-foreground pt-8 pb-4">
-        <p>&copy;2025 TopScore Ltd. All Rights Reserved.</p>
-      </footer>
+     <Footer />
     </div>
   );
 }
