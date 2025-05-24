@@ -39,13 +39,11 @@ export default function RootLayout({
         <SidebarProvider>
           <Sidebar>
             <SidebarHeader>
-              {/* Logo component removed from here */}
             </SidebarHeader>
             <SidebarContent>
               <SidebarNav />
             </SidebarContent>
-            {/* SidebarFooter can be used if SidebarNav doesn't handle its own bottom content like "Upgrade to Pro" */}
-            {/* For now, SidebarNav includes the "Upgrade to Pro" section */}
+            
           </Sidebar>
           <SidebarRail />
           <SidebarInset>
